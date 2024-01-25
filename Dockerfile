@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11.0.21_9-jre AS builder
+FROM eclipse-temurin:21.0.2_13-jre AS builder
 
 WORKDIR /tmp/aem
 
@@ -18,7 +18,7 @@ RUN chmod +x ./start.sh
 
 ########################################################################################################################
 
-FROM eclipse-temurin:11.0.21_9-jre
+FROM eclipse-temurin:21.0.2_13-jre
 
 ARG PKG
 ARG LOCALE="en_GB.UTF-8"
